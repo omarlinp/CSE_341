@@ -33,4 +33,21 @@ const createContact = async (req, res) => {
     const response = await mongodb.getDb().db().collection(process.env.COLLECTION).insertOne(contact);
     res.status(201).json(response);
 }
-module.exports = { getdata, getContactData, createContact };
+const updateContact = async (req, res) => {
+    const userId = req.params.id;
+    const contact = {
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        favoriteColor: req.body.favoriteColor,
+        birthday: req.body.birthday
+    }
+    const response = await mongodb.getDb().db().collection(process.env.COLLECTION).replaceOne({_id: new ObjectId(userId)}, contact);
+    res.status(204).json(response);
+}
+const deleteContact = async (req, res) => {
+    const userId = req.params.id;
+    const response = await mongodb.getDb().db().collection(process.env.COLLECTION).deleteOne({_id: new ObjectId(userId)});
+    res.status(200).json(response);
+}
+module.exports = { getdata, getContactData, createContact, updateContact, deleteContact };
