@@ -3,7 +3,6 @@ dotenv.config();
 const MongoClient = require('mongodb').MongoClient;
 
 const uri = process.env.MONGO_URI;
-console.log(uri);
 let _db;
 
 const connectToServer = (callback) => {

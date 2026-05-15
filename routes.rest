@@ -1,0 +1,14 @@
+//LOCALHOST 
+###
+http://localhost:8080/contacts/
+
+###
+http://localhost:8080/contacts/6a052c5c9abf4bb8b03911e1
+
+###
+http://localhost:8080/contacts/6a052c5c9abf4bb8b03911e2
+
+###
+http://localhost:8080/contacts/6a052c5c9abf4bb8b03911e3
+
+//PRODUCTION
