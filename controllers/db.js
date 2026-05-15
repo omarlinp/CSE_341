@@ -11,8 +11,6 @@ const getdata = async (req, res) => {
 
 const getContactData = async (req, res) => {
     const userId = req.params.id;
-    console.log(userId);
-    console.log(process.env.COLLECTION);
     const result = await mongodb
         .getDb()
         .db()
