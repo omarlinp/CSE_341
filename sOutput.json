@@ -5,10 +5,10 @@
     "description": "this is the description of the API for the contact list application",
     "version": "1.0.0"
   },
-  "host": "https://cse-341-spring26.onrender.com",
+  "host": "cse-341-spring26.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/first": {
