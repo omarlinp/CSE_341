@@ -5,7 +5,7 @@ const doc = {
         title: 'Contact API',
         description: 'this is the description of the API for the contact list application',
     },
-    host: 'https://cse-341-spring26.onrender.com/',
+    host: 'https://cse-341-spring26.onrender.com',
     schemes: ['http'],
 };
 
