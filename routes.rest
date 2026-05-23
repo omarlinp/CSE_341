@@ -68,17 +68,17 @@ Content-Type: application/json
 
 
 ### Update a contact
-PUT https://cse-341-spring26.onrender.com/contacts/6a0733b5b8735334e773a09f
+PUT https://cse-341-spring26.onrender.com/contacts/
 Content-Type: application/json
 
 {
 "firstName": "jefferson",
 "lastName": "Parra",
-"email": "omarlin@hola.net",
-"favoriteColor": "purple",
+"email": "jeff@hola.net",
+"favoriteColor": "cyan",
 "birthday": "1995-05-20"
 }
 
 ### Delete a contact
-DELETE https://cse-341-spring26.onrender.com/contacts/6a0733b5b8735334e773a09f
+DELETE https://cse-341-spring26.onrender.com/contacts/
 
